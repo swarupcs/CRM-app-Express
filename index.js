@@ -41,6 +41,12 @@ app.listen(PORT, () => {
     console.log("server is listening to the port: ", PORT);
 })
 
+app.get("/", (req, res) => {
+    res.send("Server is running");
+});
+
+
+
 
 // app.listen(PORT, ()=>{
 //     console.log("server is listening to the port: ", PORT);
