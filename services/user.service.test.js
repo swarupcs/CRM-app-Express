@@ -7,7 +7,7 @@ const {createUser,
 const User = require("../models/user.model");
 const Ticket = require("../models/ticket.model");
 const db = require('../tests/testUtils/db');
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 beforeAll(async() => {
     await db.connect();
